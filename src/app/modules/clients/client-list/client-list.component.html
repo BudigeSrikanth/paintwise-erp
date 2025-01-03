@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <span>Clients</span>
+    <button mat-button color="accent" routerLink="/clients/detail/new">Add Client</button>
+  </mat-toolbar>
+  
+  <mat-card>
+    <mat-table [dataSource]="clients">
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let client">{{ client.name }}</mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="contact">
+        <mat-header-cell *matHeaderCellDef>Contact</mat-header-cell>
+        <mat-cell *matCellDef="let client">{{ client.contact }}</mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+        <mat-cell *matCellDef="let client">{{ client.email }}</mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="['name', 'contact', 'email']"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['name', 'contact', 'email']"></mat-row>
+    </mat-table>
+  </mat-card>
+  
