@@ -12,7 +12,7 @@ import { SharedModule } from '../../shared/shared.module';
   declarations: [
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,

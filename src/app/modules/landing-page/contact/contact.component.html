@@ -1,1 +1,49 @@
-<p>contact works!</p>
+<div class="contact">
+    <h1>Contact Us</h1>
+    <p>
+      Have questions or need support? We're here to help. Fill out the form below or reach us through the provided contact details.
+    </p>
+  </div>
+  
+  <div class="contact-container">
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Your Name" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Your Email" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Message</mat-label>
+          <textarea matInput placeholder="Your Message" rows="4" required></textarea>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  
+    <div class="contact-details">
+      <h2>Contact Information</h2>
+      <p><mat-icon color="primary">phone</mat-icon> +91 123-456-7890</p>
+      <p><mat-icon color="primary">email</mat-icon> support&#64;paintwiseerp.com</p>
+      <p><mat-icon color="primary">location_on</mat-icon> 123, Main Street, Hyderabad, India</p>
+  
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.565445709535!2d78.474444915394!3d17.385044688084267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f1e4fbb9b3%3A0x5dbb0a0d9f7a18d4!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1634983276193!5m2!1sen!2sin"
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  
